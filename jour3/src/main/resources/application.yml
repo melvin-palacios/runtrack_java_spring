@@ -1,0 +1,21 @@
+greeting :
+    dev : Hello World!
+    prod : Salut !
+
+spring:
+    datasource:
+        url: jdbc:h2:mem:jobdb
+        driver-class-name: org.h2.Driver
+        username: melvin
+        password: azerty
+    h2:
+        console:
+            enabled: true
+    jpa:
+        hibernate:
+            ddl-auto: update
+
+    thymeleaf:
+        prefix: classpath:/templates/
+        suffix: .html
+
